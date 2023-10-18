@@ -1,12 +1,15 @@
 import pathlib
 import cv2
 
-cascade_path = pathlib.Path(cv2.__file__).parent.absolute(
-) / "data/haarcascade_frontalface_default.xml"
+cascade_path = pathlib.Path(cv2.__file__).parent.absolute() / "data/haarcascade_frontalface_default.xml"
 
 clf = cv2.CascadeClassifier(str(cascade_path))
 
 camera = cv2.VideoCapture(0)
+
+# Create a named window and set it to full-screen
+cv2.namedWindow("Faces", cv2.WND_PROP_FULLSCREEN)
+cv2.setWindowProperty("Faces", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
 while True:
     _, frame = camera.read()
