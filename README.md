@@ -44,3 +44,6 @@ After breaking out of the loop, the script releases the camera capture using cam
 It also closes all OpenCV windows using cv2.destroyAllWindows().
 
 The result of running this code is a full-screen window displaying the live video feed from your camera, with faces highlighted by rectangles. You can exit the program by pressing the "q" key. This code provides a basic implementation of real-time face detection and can serve as a starting point for more advanced face recognition or tracking applications.
+
+
+![Screenshot from 2024-05-02 16-04-44](https://github.com/abhishek7h/faces/assets/87843823/4d7eb7ba-b64c-4c36-92e1-57e0ea1afef5)
